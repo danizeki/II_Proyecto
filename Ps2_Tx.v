@@ -24,8 +24,8 @@ module Ps2_Rx(
 	output reg rx_done_tick_ps2_rx,
 	output wire [7:0] dout_ps2_rx
 	
-    );
-
+    );  
+    
 // symbol state declaration 
 localparam [1:0]
 idle_ps2_rx = 2'd0, dps_ps2_rx = 2'd1, load_ps2_rx = 2'd2 ; 
