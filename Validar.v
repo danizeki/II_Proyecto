@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: UTech Corp
 // Engineer: 
 // 
 // Create Date:    01:05:31 08/23/2015 
@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
-// Description: 
+// Description: 	(Codigo Original)
 //
 // Dependencies: 
 //
