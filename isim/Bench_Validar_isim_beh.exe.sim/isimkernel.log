@@ -1,0 +1,29 @@
+Command line:
+   Bench_Validar_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54950
+
+Sun Aug 23 02:52:28 2015
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 361.419 Meg
+
+ Total Signals          : 19
+ Total Nets             : 33
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 17
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 280
+Total Line Count : 110
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 361.419 Meg
+
+Sun Aug 23 02:52:48 2015
+

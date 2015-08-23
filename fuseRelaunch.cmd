@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Karina/Desktop/Miras VI/Digitales/II Proyecto/II_Proyecto/Bench_Validar_isim_beh.exe" -prj "C:/Users/Karina/Desktop/Miras VI/Digitales/II Proyecto/II_Proyecto/Bench_Validar_beh.prj" "work.Bench_Validar" "work.glbl" 

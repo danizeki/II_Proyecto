@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml Validar.twx Validar.ncd -o Validar.twr Validar.pcf
+
+Design file:              Validar.ncd
+Physical constraint file: Validar.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk_V
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+Reset_V        |    1.041(R)|      SLOW  |   -0.108(R)|      SLOW  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<0>|    1.694(R)|      SLOW  |   -0.629(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<1>|    2.031(R)|      SLOW  |   -0.749(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<2>|    1.309(R)|      SLOW  |   -0.395(R)|      SLOW  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<3>|    1.837(R)|      SLOW  |   -0.635(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<4>|    2.078(R)|      SLOW  |   -0.854(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<5>|    2.089(R)|      SLOW  |   -0.844(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<6>|    1.633(R)|      SLOW  |   -0.644(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Save_KeyCode<7>|    1.184(R)|      SLOW  |   -0.199(R)|      SLOW  |Clk_V_BUFGP       |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk_V to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+Led_Invalid     |         9.140(R)|      SLOW  |         3.691(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<0>|         9.716(R)|      SLOW  |         4.055(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<1>|         9.408(R)|      SLOW  |         3.881(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<2>|         9.686(R)|      SLOW  |         4.081(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<3>|         9.395(R)|      SLOW  |         3.889(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<4>|         9.399(R)|      SLOW  |         3.889(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<5>|         9.417(R)|      SLOW  |         3.926(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+Valid_KeyCode<6>|         9.204(R)|      SLOW  |         3.766(R)|      FAST  |Clk_V_BUFGP       |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+----------------+---------+
+Source Pad     |Destination Pad |  Delay  |
+---------------+----------------+---------+
+Save_KeyCode<0>|Valid_KeyCode<0>|    9.589|
+Save_KeyCode<0>|Valid_KeyCode<1>|    9.141|
+Save_KeyCode<0>|Valid_KeyCode<2>|    9.884|
+Save_KeyCode<0>|Valid_KeyCode<3>|    9.679|
+Save_KeyCode<0>|Valid_KeyCode<4>|    9.790|
+Save_KeyCode<0>|Valid_KeyCode<5>|    9.654|
+Save_KeyCode<0>|Valid_KeyCode<6>|   10.081|
+Save_KeyCode<1>|Valid_KeyCode<0>|   10.010|
+Save_KeyCode<1>|Valid_KeyCode<1>|    9.829|
+Save_KeyCode<1>|Valid_KeyCode<2>|   10.261|
+Save_KeyCode<1>|Valid_KeyCode<3>|   10.031|
+Save_KeyCode<1>|Valid_KeyCode<4>|    9.646|
+Save_KeyCode<1>|Valid_KeyCode<5>|   10.198|
+Save_KeyCode<1>|Valid_KeyCode<6>|   10.607|
+Save_KeyCode<2>|Valid_KeyCode<0>|    9.748|
+Save_KeyCode<2>|Valid_KeyCode<1>|    9.570|
+Save_KeyCode<2>|Valid_KeyCode<2>|    9.570|
+Save_KeyCode<2>|Valid_KeyCode<3>|   10.025|
+Save_KeyCode<2>|Valid_KeyCode<4>|    9.272|
+Save_KeyCode<2>|Valid_KeyCode<5>|    9.507|
+Save_KeyCode<2>|Valid_KeyCode<6>|    9.723|
+Save_KeyCode<3>|Valid_KeyCode<0>|   10.087|
+Save_KeyCode<3>|Valid_KeyCode<1>|    9.611|
+Save_KeyCode<3>|Valid_KeyCode<2>|   10.228|
+Save_KeyCode<3>|Valid_KeyCode<3>|   10.208|
+Save_KeyCode<3>|Valid_KeyCode<4>|    9.667|
+Save_KeyCode<3>|Valid_KeyCode<5>|   10.165|
+Save_KeyCode<3>|Valid_KeyCode<6>|   10.642|
+Save_KeyCode<4>|Valid_KeyCode<0>|   10.070|
+Save_KeyCode<4>|Valid_KeyCode<1>|    9.956|
+Save_KeyCode<4>|Valid_KeyCode<2>|   10.046|
+Save_KeyCode<4>|Valid_KeyCode<3>|   10.148|
+Save_KeyCode<4>|Valid_KeyCode<4>|    9.653|
+Save_KeyCode<4>|Valid_KeyCode<5>|    9.704|
+Save_KeyCode<4>|Valid_KeyCode<6>|   10.254|
+Save_KeyCode<5>|Valid_KeyCode<0>|   10.256|
+Save_KeyCode<5>|Valid_KeyCode<1>|    9.246|
+Save_KeyCode<5>|Valid_KeyCode<2>|    9.610|
+Save_KeyCode<5>|Valid_KeyCode<3>|    9.823|
+Save_KeyCode<5>|Valid_KeyCode<4>|    9.760|
+Save_KeyCode<5>|Valid_KeyCode<5>|    9.064|
+Save_KeyCode<5>|Valid_KeyCode<6>|    9.978|
+Save_KeyCode<6>|Valid_KeyCode<0>|    9.656|
+Save_KeyCode<6>|Valid_KeyCode<1>|    8.821|
+Save_KeyCode<6>|Valid_KeyCode<2>|    9.433|
+Save_KeyCode<6>|Valid_KeyCode<3>|   10.002|
+Save_KeyCode<6>|Valid_KeyCode<4>|    9.497|
+Save_KeyCode<6>|Valid_KeyCode<5>|    8.726|
+Save_KeyCode<6>|Valid_KeyCode<6>|   10.006|
+Save_KeyCode<7>|Valid_KeyCode<0>|    8.861|
+Save_KeyCode<7>|Valid_KeyCode<1>|    8.295|
+Save_KeyCode<7>|Valid_KeyCode<2>|    8.953|
+Save_KeyCode<7>|Valid_KeyCode<3>|    8.073|
+Save_KeyCode<7>|Valid_KeyCode<4>|    8.707|
+Save_KeyCode<7>|Valid_KeyCode<5>|    8.793|
+Save_KeyCode<7>|Valid_KeyCode<6>|    8.529|
+---------------+----------------+---------+
+
+
+Analysis completed Sun Aug 23 02:48:49 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 240 MB
+
+
+
